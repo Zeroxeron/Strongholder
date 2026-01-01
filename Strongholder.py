@@ -43,13 +43,13 @@ class Strongholder:
         self.sc_results_top = None
         self.sc_grid = None
         # text labels reset
-        self.text_results.set_text("Expecting [F3+C] clipboard...")
+        self.text_results.set_text(f"Expecting [F3+C] clipboard... ({CFG.ANGLE_OFFSET:+}°)")
         self.text_help.set_text("[R]-Reload [X]-Copy closest tp")
         self.text_status.set_text("Idle...")
 
     def __init__(self):
         self.text_results = self.fig.text(
-            0.5, 0.25, "Expecting [F3+C] clipboard...",
+            0.5, 0.25, f"Expecting [F3+C] clipboard... ({CFG.ANGLE_OFFSET:+}°)",
             ha='center', va='top', fontsize=10, color='white',
             transform=self.fig.transFigure)
         self.text_help = self.fig.text(
@@ -106,7 +106,7 @@ class Strongholder:
         self.ax.set_xlim(auto=True)
         self.ax.set_ylim(auto=True)
         self.fig.subplots_adjust(bottom=0.35)  # add space at bottom
-        self.text_results.set_text("Expecting [F3+C] clipboard...")
+        self.text_results.set_text(f"Expecting [F3+C] clipboard... ({CFG.ANGLE_OFFSET:+}°)")
         for spine in self.ax.spines.values():
             spine.set_color("white")
         self.fig.canvas.draw_idle()

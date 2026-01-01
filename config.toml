@@ -22,6 +22,9 @@ MAX_MARGIN = 1.25
 # Allowance stronghold distance for eye-throw. [3000]
 MAX_DISTANCE = 2816
 
-# Input error offset for 30-FOV pixel-center measurement, in degrees. [0]
-# Note: -0.13 is decent for casual 30 fov pixel center measurement, use 0 for low sens + AHK tall screen.
-ANGLE_OFFSET = 0.0
+# Input angle offset, in degrees. [-0.13]
+#    WARNING: -0.13 is decent for casual 30 FOV pixel center measurement,
+#    but its different for low sens + AHK tall screen!
+#    please visit https://github.com/Zeroxeron/Strongholder
+#    to setup the angle correctly
+ANGLE_OFFSET = -0.13

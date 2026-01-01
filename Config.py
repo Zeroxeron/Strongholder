@@ -45,7 +45,7 @@ class Config:
     # filter max AVG angle deviation (+multiplies per line to address the input error)
     MAX_MARGIN: float = 1.25
     # input error offset (-0.13 is decent for casual 30 fov pixel center measurement. Use 0 for low sens + AHK tall screen)
-    ANGLE_OFFSET: float = 0
+    ANGLE_OFFSET: float = -0.13
 
 def _toml_repr_for_s_rings(rings: List[Tuple[int,int]]) -> str:
     # Format as TOML array-of-arrays: [[min,max],[min,max],...]
@@ -81,8 +81,10 @@ MAX_MARGIN = {float(cfg.MAX_MARGIN)}
 # Allowance stronghold distance for eye-throw. [3000]
 MAX_DISTANCE = {int(cfg.MAX_DISTANCE)}
 
-# Input error offset for 30-FOV pixel-center measurement, in degrees. [0]
-# Note: -0.13 is decent for casual 30 fov pixel center measurement, use 0 for low sens + AHK tall screen.
+# Input angle offset, in degrees. [-0.13]
+#    WARNING: -0.13 is NOT for precise measurements!
+#    please visit https://github.com/Zeroxeron/Strongholder
+#    to setup the angle correctly!
 ANGLE_OFFSET = {float(cfg.ANGLE_OFFSET)}
 """
     path.write_text(text, encoding="utf-8")
