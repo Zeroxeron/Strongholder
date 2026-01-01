@@ -13,3 +13,4 @@ env/
 Thumbs.db
 *.log
 .output/
+config.toml
