@@ -1,0 +1,27 @@
+#                                                                        
+# ██▄  ▄██ ▄█████   ▄█████  ▄▄▄  ▄▄  ▄▄ ▄▄▄▄▄ ▄▄  ▄▄▄▄ 
+# ██ ▀▀ ██ ▀▀▀▄▄▄   ██     ██▀██ ███▄██ ██▄▄  ██ ██ ▄▄ 
+# ██    ██ █████▀   ▀█████ ▀███▀ ██ ▀██ ██    ██ ▀███▀ 
+#                                                     (c) 2026 x_Kiva_x
+#
+# Stronghold rings list [[min1, max1],[min2,max2], ...] in blocks.
+# Each entry has minimum and maximum distance for a ring. Defaults: https://minecraft.fandom.com/wiki/Stronghold
+S_RINGS = [[1280,2816],[4352,5888],[7424,8960],[10496,12032],[13568,15104],[16640,18176],[19712,21248],[22784,24320]]
+
+# Maximum number of rings to consider (1 = only first ring). 
+# Speedruns typically only need the first ring, but this can be changed. [1]
+MAX_RINGS = 1
+
+# Number of results to show per query. [5]
+MAX_RESULTS = 5
+
+# Filter maximum average angle deviation (degrees). Used as a tolerance.
+# Multiplies per line count to address input errors. [1.25]
+MAX_MARGIN = 1.25
+
+# Allowance stronghold distance for eye-throw. [3000]
+MAX_DISTANCE = 2816
+
+# Input error offset for 30-FOV pixel-center measurement, in degrees. [0]
+# Note: -0.13 is decent for casual 30 fov pixel center measurement, use 0 for low sens + AHK tall screen.
+ANGLE_OFFSET = 0.0
