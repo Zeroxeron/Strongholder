@@ -9,7 +9,7 @@ Features real-time F3+C clipboard grab, direction lines, Stronghold pos, Nether 
 
 Perfect for speedruns, survival worlds, and finding End portals with high accuracy.
 
-Check FAQ for specifics
+Check [FAQ](https://github.com/Zeroxeron/Strongholder#faq) for specifics!
 
 ## Demo:
 
@@ -60,7 +60,7 @@ A: Yes, it can. However, this requires high precision and special config. With t
 
 I dont have a reliable config right now, so the best way is to test angle offset by your own (start with 0.0). 
 
-Share your config [-> here <-]([https://docs.google.com/forms/d/e/1FAIpQLSfJ6kmW3wh3500wLIiML7Rh5uka3LB_FR7qOkK3164aDFVgEw/viewform?usp=dialog). 
+Share your config [-> here <-](https://forms.gle/EtwyTE3Vuu6yUg4W9). 
 
 Check others presets [-> here <-](https://docs.google.com/spreadsheets/d/1IWk2itZGarPUd6qIu9gpQD8-IB-BSi4TRezSc3XGLms/edit?resourcekey=&gid=1024968442#gid=1024968442).
 
