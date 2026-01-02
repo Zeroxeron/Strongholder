@@ -64,14 +64,23 @@ Share your config [-> here <-](https://forms.gle/EtwyTE3Vuu6yUg4W9).
 
 Check others presets [-> here <-](https://docs.google.com/spreadsheets/d/1IWk2itZGarPUd6qIu9gpQD8-IB-BSi4TRezSc3XGLms/edit?resourcekey=&gid=1024968442#gid=1024968442).
 
+### Q: Why is it unprecise for me?
+A: Default angle offset value is -0.13, which is used with [this](https://www.youtube.com/watch?v=Ka5fh-_XXag) fast 30-FOV only strategy (no low sens, no AHK). 
+
+Travel 20-50 blocks for throw with total of 2-3 ender-eye throws to get the actual stronghold position.
+
+You need to change that value to 0.0 if you use more precise technique, or test out different offset parameter values to get the best results.
+
 ### Q: Why is it 50mb?
 A: My PyInstaller grabbed some chunky libs there, such as pandas and PyQt5. You can try building it by yourself with any another method.
 
 ### Q: Is it better than NinjaBrain's bot?
 A: You should test it yourself!
 
-### Q: Does it counts as cheating?
-A: No, unless specified in the server/match/tournament rules. MCSR mentions other calculators in their tool list.
+### Q: Is it allowed?
+A: Dont use it in actual run right now, as it is not veryfied yet by MCSR Staff. Also ensure that calculators are generally permitted by your server/match/tournament rules. 
+
+MCSR mentions other allowed calculators in their [tool list](https://www.minecraftspeedrunning.com/public-resources/tools-and-resources) and [rules sphreadsheet](https://www.minecraftspeedrunning.com/public-resources/rules).
 
 ### Q: Can it do 2nd,3rd,4th ring?
 A: Yes, it can. Change the config file (generates after the launch).
@@ -84,3 +93,7 @@ A: Try making a pull req [-> here <-](https://github.com/Zeroxeron/Strongholder/
 
 ### Q: Donations?
 A: No, thanks.
+
+## Future updates
+
+I was not planning to hard-develop McStrongholder, but we'll see how it goes, I may add some good stuff to it later, based on your support. Its all up to you!
